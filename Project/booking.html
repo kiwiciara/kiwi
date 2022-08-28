@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<script>
+	document.getElementById("myTopnav").innerHTML = "script.js"
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ndl7hlv.css">
+<title>booking</title>
+</head>
+
+<body>
+	<header class="head">Furry Friends</header>
+	
+<div class="topnav" id="myTopnav">
+  <a href="Home.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="booking.html">Booking</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="boarding.html">Boarding</a>
+      <a href="classes.html">Classes</a>
+		<a href="grooming.html">Grooming</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<h1 class="h1">Book a sevice</h1>
+	<p class="p"> Please choose your chosen service type and give us any further details in the information text box provided.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Your name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="Your name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Your email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="service">Sevrice</label>
+      </div>
+      <div class="col-75">
+        <select id="service" name="service">
+          <option value="boarding">Boarding</option>
+          <option value="grooming">Grooming</option>
+          <option value="classes">Class</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Info</label>
+      </div>
+      <div class="col-75">
+        <textarea id="info" name="info" placeholder="Please specify what kind of service you would like and provide a short discription of your dog" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</body>
+	
+	<footer><p class="footer">Furry Friends 2022</p></footer>
+	
+</html>
